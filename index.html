@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <script src="./js/pages.js"></script>
+        <script src="./js/index.js"></script>
+        <link rel="stylesheet" href="./css/index.css">
+        <title>Network Tutorial Page</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1 class="centerText">Network Tutorials</h1>
+            <nav>
+                <div class="clearB"></div>
+                <div class="floatL">
+                    <ul class="noBulletPt">
+                        <li><a href="javascript:nav.orientation()">OT.Why we should study network!</a></li>
+                        <li><a href="javascript:nav.day01()">day01.Home network and SOHO</a></li>
+                        <li><a href="javascript:nav.day02()">day02.ping and traceRoute</a></li>
+                        <li><a href="javascript:nav.day03()">day03.IP address and physical component</a></li>
+                        <li><a href="javascript:nav.day04()">day04.Domain Name System</a></li>
+                        <li><a href="javascript:nav.day05()">day05.OSI model and layers</a></li>
+                        <li><a href="javascript:nav.day06()">day06.OSI model:7,6,5 developers layer</a></li>
+                        <li><a href="javascript:nav.day07()">day07.OSI model:rest of them server engineer layer</a></li>
+                        <li><a href="javascript:nav.day08()">day08.OSI model:Host Communucation</a></li>
+                        <li><a href="javascript:nav.day09()">day09.TCP/IP and hybrid model</a></li>
+                        <li><a href="javascript:nav.day10()">day10.Intro To Binary and Decimal</a></li>
+                        <li><a href="javascript:nav.day11()">day11.Practice binary to decimal,decimal to binary</a></li>
+                        <li><a href="javascript:nav.day12()">day12.How to convert IP address to binary and vice versa!</a></li>
+                        <li><a href="javascript:nav.day13()">day13.Intro to Hexadecimal</a></li>
+                        <li><a href="javascript:nav.day14()">day14.IP addressing</a></li>
+                        <li><a href="javascript:nav.day15()">day15.</a></li>
+                    </ul>
+                </div>
+                <div class="floatL">
+                    <ul class="noBulletPt">
+                        <li><a href="javascript:nav.day16()">day16.</a></li>
+                    </ul>
+                </div>
+                <div class="clearB"></div>
+            </nav>
+        </div>
+
+        <article id="mainArticle">
+            <h2 class="leftText">day14.IP addressing</h2>
+            <section>
+                <ul>
+                    <li>We will say in IPv4 by default.</li>
+                </ul>
+                <blockquote>
+                    again...<br>
+                    <span class="emphRed">IP address</span> is
+                    a <span class="emphBlue">layer 3 address given my admin</span>.
+                </blockquote>
+                <ul>
+                    <h4 class="leftText">Properties</h4>
+                    <li>Resides in <span class="emphBlue">Layer3 of OSI model</span></li>
+                    <li>It is <span class="emphRed">not hard coded</span> like MAC address</li>
+                    <li>Used to <span class="emphBlue">identify</span> <span class="emphRed">unique devices</span>
+                        <div>
+                            Such as &ldquo;Where is the network located?&rdquo;<br>
+                            and Pointers in C++.
+                        </div>
+                    </li>
+                    <li>Every web site has its own IP address range.</li>
+                    <li>And even every device has its own IP address including my laptop.
+                        <ul>
+                            <li>Use <span class="emphBlue">ipconfig</span>
+                                 in cmd from Windows.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="centerText">IPv4</h3>
+                <blockquote>
+                    <span class="emphRed">IPv4</span> is a
+                     <span class="emphBlue">layer 3(=network) protocol</span>. 
+                </blockquote>
+                <ul>
+                    <h4 class="leftText">Properties</h4>
+                    <li><span class="emphRed">Connnectionless</span> protocol
+                        <ul>
+                            <li><span class="emphBlue">session is not formed</span>
+                                 during the protocol.</li>
+                            <li>Contrast to TCP which is connection oriented.</li>
+                        </ul>
+                    </li>
+                    <li><span class="emphBlue">each packet</span>
+                         is treated <span class="emphBlue">individually</span>
+                          so each <span class="emphBlue">may take different paths</span>.
+                    </li>
+                </ul>
+            </section>
+        </article>
+        
+        <aside>
+            <ul class="circleBulletPt">
+                <h3 class="centerText">Key terms</h3>
+                <li>
+                    <span class="emphRed">Internet(WWW)</span>:
+                    a forest of thousands of routers.
+                </li>
+                <li>
+                    <span class="emphRed">Network</span>:
+                    a connection between the two computer or devices.
+                    <div class="indented">
+                        <ul>
+                            <li>It can be phones,printers, computers.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span class="emphRed">Network Protocol</span>:
+                    a <span class="emphBlue">set of rules and conventions</span>
+                    that governs <span class="emphBlue">networking</span>.
+                    <div class="indented">
+                        It is similar to
+                         <span class="emphBlue">language</span>
+                        in conversation.<br>
+                        and provides
+                         <span class="emphBlue">standards</span>.
+                    </div>
+                </li>
+                <li>
+                    <span class="emphRed">Router</span>:
+                    a device that moves the data among different interfaces.
+                    <div class="indented">
+                        <div class="clearB"></div>
+                        <div class="floatL">
+                            <img
+                                src="img/day01/router.png"
+                                style="
+                                    width:200px;
+                                    height:200px;
+                                "
+                            />
+                        </div>
+                        <div class="floatL">
+                            <ul>
+                                <li>
+                                    <span class="emphBlue">Distance</span>
+                                    is the most important factors for routing.
+                                </li>
+                                <li>
+                                    It can give 
+                                    <span class="emphBlue">wired or wireless</span>
+                                    connectivity where phones, tablets, laptops can connect to.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearB"></div>
+                    </div>
+                </li>
+                <li>
+                    <span class="emphRed">Switch</span>:
+                    a device that moves the data among different interfaces.
+                    <div class="indented">
+                            <div class="clearB"></div>
+                            <div class="floatL">
+                                <img
+                                    src="img/day01/switch.png"
+                                    style="
+                                        width:200px;
+                                        height:200px;
+                                    "
+                                />
+                            </div>
+                            <div class="floatL">
+                                <ul>
+                                    <li>
+                                        <span class="emphBlue">Distance</span>
+                                        is the most important factors for routing.
+                                    </li>
+                                    <li>
+                                        it gives you multiple 
+                                         <span class="emphBlue">ports</span>
+                                        you can connect to.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clearB"></div>
+                        </div>
+                </li>
+                <li>
+                    <span class="emphRed">IP address</span>:
+                    <span class="emphBlue">I</span>nternet
+                    <span class="emphBlue">P</span>rotocol
+                    address = <span class="emphBlue">layer3(network) address assigned by admin</span>.
+                    <div class="indented">
+                        <ul>
+                            <li>Similar to <span class="emphBlue">pointer in C++</span> or
+                                <span class="emphBlue"> home address</span>
+                            .</li>
+                            <li>Resides in Layer3 of OSI model</li>
+                            <li>It is not hard coded like MAC address</li>
+                            <li>Used to identify unique devices</li>
+                        </ul>
+                        <ul>
+                            <li><span class="emphRed">Ipv4 address</span>
+                               helps <span class="emphBlue">
+                                   identify unique device in IP address
+                                </span>.
+                                <ul>
+                                    <caption>It has</caption>
+                                    <li>4 octet length(0~255)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span class="emphRed">DNS</span>(
+                    <span class="emphBlue">D</span>omain
+                    <span class="emphBlue">N</span>ame
+                    <span class="emphBlue">S</span>ervice)=
+                    a system changing
+                    <span class="emphBlue">IP addresses</span> into
+                    <span class="emphBlue"> names</span>.
+                </li>
+                <li>
+                    <span class="emphRed">OSI</span>(
+                    <span class="emphBlue">O</span>pen
+                    <span class="emphBlue">S</span>ystem
+                    <span class="emphBlue">I</span>nterconnection)
+                        model governs
+                        <span class="emphBlue">how devices communicate</span>
+                    to each other.
+                </li>
+                <li>
+                    TCP(Transmission Control Protocol),UDP(User Datagram Protocol):
+                </li>
+                <li>
+                    <span class="emphRed">Data Encapsulation</span>=During
+                    the host communication,data from one device is
+                    <span class="emphBlue">encapsulated</span>
+                     with <span class="emphBlue">each layers packet</span>.
+                </li>
+                <li>
+                    <span class="emphRed">Data Deencapsulation</span>>=During
+                    the host communication,data from one device is
+                    <span class="emphBlue">De-encapsulated</span>
+                     and sent to <span class="emphBlue"> the other device</span>.
+                </li>
+            </ul>
+            <ul class="circleBulletPt">
+                <h3 class="centerText">Tips</h3>
+                <li>
+                    You can
+                    <span class="emphBlue">track down paths and time</span>
+                      with
+                      <span class="emphRed">ping</span> and
+                      <span class="emphRed">tracert</span> commands in
+                      <span class="emphBlue">windows cmd</span>.
+                </li>
+                <li>
+                    With single switch or router,you can connect even printers, phone with computers.
+                </li>
+                <li>Basic Network knowledge is required for every good position...</li>
+            </ul>
+        </aside>
+    </body>
+</html>
