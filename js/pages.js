@@ -648,9 +648,72 @@ const contents={
             </div>\
         </section>',
     day14:
-        '',
+        '<h2 class="leftText">day14.IP addressing</h2>\
+        <section>\
+            <ul>\
+                <li>We will say in IPv4 by default.</li>\
+            </ul>\
+            <blockquote>\
+                again...<br>\
+                <span class="emphRed">IP address</span> is\
+                a <span class="emphBlue">layer 3 address given my admin</span>.\
+            </blockquote>\
+            <ul>\
+                <h4 class="leftText">Properties</h4>\
+                <li>Resides in <span class="emphBlue">Layer3 of OSI model</span></li>\
+                <li>It is <span class="emphRed">not hard coded</span> like MAC address</li>\
+                <li>Used to <span class="emphBlue">identify</span> <span class="emphRed">unique devices</span>\
+                    <div>\
+                        Such as &ldquo;Where is the network located?&rdquo;<br>\
+                        and Pointers in C++.\
+                    </div>\
+                </li>\
+                <li>Every web site has its own IP address range.</li>\
+                <li>And even every device has its own IP address including my laptop.\
+                    <ul>\
+                        <li>Use <span class="emphBlue">ipconfig</span>\
+                             in cmd from Windows.</li>\
+                    </ul>\
+                </li>\
+            </ul>\
+        </section>\
+        <section>\
+            <h3 class="centerText">IPv4</h3>\
+            <blockquote>\
+                <span class="emphRed">IPv4</span> is a\
+                 <span class="emphBlue">layer 3(=network) protocol</span>. </blockquote>\
+            <ul>\
+                <h4 class="leftText">Properties</h4>\
+                <li><span class="emphRed">Connnectionless</span> protocol\
+                    <ul>\
+                        <li><span class="emphBlue">session is not formed</span>\
+                             during the protocol.</li>\
+                        <li>Contrast to TCP which is connection oriented.</li>\
+                    </ul>\
+                </li>\
+                <li><span class="emphBlue">each packet</span>\
+                     is treated <span class="emphBlue">individually</span>\
+                      so each <span class="emphBlue">may take different paths</span>.\
+                </li>\
+            </ul>\
+            <div class="clearB"></div>\
+            <ul class="floatL">\
+                <caption>Network Address</caption>\
+                <li><span class="emphBlue">network address</span> of IP address.</li>\
+                <li>Used for <span class="emphBlue">Routing</span></li>\
+                <li>send <span class="emphBlue">packet</span>\
+                     to <span class="emphBlue">target network address</span>.</li>\
+            </ul> <ul class="floatL">\
+                <caption>Host address</caption>\
+                <li><span class="emphBlue">end point</span> of network of IP address.</li>\
+                <li>The example would be <span class="emphBlue">phone,tablet, etc..</span></li>\
+            </ul>\
+            <div class="clearB"></div>\
+        </section>',
     day15:
         '',
     day16:
+        '',
+    day17:
         '',
 }
