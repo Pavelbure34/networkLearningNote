@@ -219,6 +219,27 @@ const nav = {
     },
     day15:()=>{
         $("#mainArticle").html(contents.day15);   
+        funcs.imageWithSub(
+            "img1",
+            "center",
+            "./img/day15/classA.png",
+            700,300,
+            "Class A"
+        );
+        funcs.imageWithSub(
+            "img2",
+            "center",
+            "./img/day15/classB.png",
+            700,300,
+            "Class B"
+        );
+        funcs.imageWithSub(
+            "img3",
+            "center",
+            "./img/day15/classC.png",
+            700,300,
+            "Class C"
+        );
     },
     day16:()=>{
         $("#mainArticle").html(contents.day16);   

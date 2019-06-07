@@ -711,7 +711,111 @@ const contents={
             <div class="clearB"></div>\
         </section>',
     day15:
-        '',
+        '<h2 class="leftText">day15.Address classes</h2>\
+        <section>\
+            <ul class="noBulletPt">\
+                <caption>address classes</caption>\
+                <li><span class="emphRed">Class A</span>\
+                    <div id="img1"></div>\
+                    <ul>\
+                        <caption>Properties</caption>\
+                        <li><span class="emphRed">binary range</span> from binary 0\
+                            <span class="emphBlue">0.0.0.0 to 127.255.255.255</span>\
+                        </li>\
+                        <li>\
+                            <span class="emphRed">Actual available range</span> is from\
+                            <span class="emphBlue">1.0.0.0 to 126.255.255.255</span>\
+                        </li>\
+                        <li>There are exceptions\
+                            <ul>\
+                                <caption>Examples</caption>\
+                                <li><span class="emphBlue">127 range</span>\
+                                     is reserved for\
+                                      <span class="emphRed">loopback</span>\
+                                </li>\
+                                <li><span class="emphBlue">0 range</span>\
+                                    is reserved for\
+                                     <span class="emphRed">default network</span>\
+                                </li>\
+                            </ul>\
+                        </li>\
+                    </ul>\
+                </li>\
+                <li><span class="emphRed">Class B</span>\
+                    <div id="img2"></div>\
+                    <ul>\
+                        <caption>Properties</caption>\
+                        <li><span class="emphRed">binary range</span> from binary 10\
+                            <span class="emphBlue">128.0.0.0 to 191.255.255.255</span>\
+                        </li>\
+                    </ul>\
+                </li>\
+                <li><span class="emphRed">Class C</span>\
+                    <div id="img3"></div>\
+                    <ul>\
+                        <caption>Properties</caption>\
+                        <li><span class="emphRed">binary range</span> from binary 110\
+                            <span class="emphBlue">192.0.0.0 to 223.255.255.255</span>\
+                        </li>\
+                    </ul>\
+                </li>\
+                <ul style="list-style-type: disc;">\
+                    <caption>Class A ~ C</caption>\
+                    <li><span class="emphBlue">Class A,B,C</span>\
+                        are used for\
+                        <span class="emphRed">unicast traffic</span>.</li>\
+                    <li>They\
+                         <span class="emphBlue">accommodate different size of networks</span></li>\
+                    <li>They help\
+                        <span class="emphBlue"> classify all the networks</span>.</li>\
+                    <li>It was\
+                         <span class="emphRed">replaced by CIDR</span> in 1993.</li>\
+                    <li>It was\
+                        <span class="emphBlue">governed by IANA(Internet Assigned Number Authority)</span>\
+                    </li>\
+                    <li>\
+                        It holds 6 million IP addresses.\
+                    </li>\
+                </ul>\
+                <li><span class="emphRed">Class D</span>\
+                    is used for\
+                     <span class="emphRed">multicast traffic</span>.\
+                     <ul>\
+                         <caption>Properties</caption>\
+                         <li><span class="emphRed">binary range</span> from binary 1110\
+                             <span class="emphBlue">224.0.0.0 to 239.255.255.255</span>\
+                         </li>\
+                         <li>There are exceptions\
+                            <ul>\
+                                <caption>Examples</caption>\
+                                <li><span class="emphBlue">224.0.0.X range</span>\
+                                     is reserved for\
+                                      <span class="emphRed">Link Local Multicast</span>\
+                                </li>\
+                            </ul>\
+                        </li>\
+                     </ul>\
+                </li>\
+                <li><span class="emphRed">Class E</span>\
+                    is reserved for\
+                    <span class="emphRed">future and experimental purposes</span>.\
+                     <ul>\
+                         <caption>Properties</caption>\
+                         <li><span class="emphRed">binary range</span> from binary 1110\
+                             <span class="emphBlue">240.0.0.0 to 255.255.255.255</span>\
+                         </li>\
+                     </ul>\
+                </li>\
+            </ul>\
+            <ul>\
+                <li><span class="emphBlue">IPv4</span>\
+                     used address classes but was replaced with\
+                     <span class="emphBlue"> CIDR</span></li>\
+                <li><span class="emphBlue">IPv6</span>\
+                     does <span class="emphRed">not use</span>\
+                      address classes.</li>\
+            </ul>\
+        </section>',
     day16:
         '',
     day17:
