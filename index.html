@@ -35,8 +35,9 @@
                 </div>
                 <div class="floatL">
                     <ul class="noBulletPt">
-                        <li><a href="javascript:nav.day16()">day16.</a></li>
+                        <li><a href="javascript:nav.day16()">day16.special IPv4 addresses</a></li>
                         <li><a href="javascript:nav.day17()">day17.</a></li>
+                        <li><a href="javascript:nav.day18()">day18.</a></li>
                     </ul>
                 </div>
                 <div class="clearB"></div>
@@ -44,7 +45,59 @@
         </div>
 
         <article id="mainArticle">
-            
+            <h2 class="leftText">day16.special IPv4 addresses</h2>
+            <section>
+                <h3 class="centerText">Directed Broadcast address</h3>
+                <blockquote>
+                    A address that host
+                    <span class="emphRed">sends</span> data to
+                      <span class="emphBlue">all the network on a specific network</span>.
+                </blockquote>
+                <div id="img1"></div>
+                <ul>
+                    <caption>Properties</caption>
+                    <li><span class="emphRed">The host portion</span>
+                         is <span class="emphBlue">binary 1</span>.</li>
+                    <li>Example..
+                        <div>
+                            If <span class="emphBlue">172.16.0.0</span>,
+                            broadcast address is
+                             <span class="emphBlue">172.16.255.255</span>.
+                        </div>
+                    </li>
+                    <li>It is
+                         <span class="emphBlue">disabled</span>
+                         <span class="emphRed">by default</span>.
+                         <div>
+                             They can be used for hacking attack!
+                         </div>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="centerText">Local Broadcast address</h3>
+                <blockquote>
+                    A address that host
+                    <span class="emphRed">communicate with</span>
+                        <span class="emphBlue">all the devices on a local network</span>.
+                </blockquote>
+                <div id="img2"></div>
+                <ul>
+                    <caption>Properties</caption>
+                    <li><span class="emphRed">addres</span>
+                            is all <span class="emphBlue">binary 1s</span>.</li>
+                    <li>Example..
+                        <div>
+                            <span class="emphBlue">255.255.255.255</span>.
+                        </div>
+                    </li>
+                    <li>When it is used
+                        <ul>
+                            <li>host request IP address from DHCP server</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
         </article>
         
         <aside>

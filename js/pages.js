@@ -820,4 +820,6 @@ const contents={
         '',
     day17:
         '',
+    day18:
+        '',
 }
