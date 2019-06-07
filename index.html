@@ -81,7 +81,6 @@
                     <span class="emphRed">communicate with</span>
                         <span class="emphBlue">all the devices on a local network</span>.
                 </blockquote>
-                <div id="img2"></div>
                 <ul>
                     <caption>Properties</caption>
                     <li><span class="emphRed">addres</span>
@@ -91,11 +90,43 @@
                             <span class="emphBlue">255.255.255.255</span>.
                         </div>
                     </li>
+                    <li>It is <span class="emphBlue">always dropped and can be overridden</span>
+                         by <span class="emphRed">routers and layer3 switches<br>
+                        with DHCP forwarding or relay</span>.
+                    </li>
                     <li>When it is used
                         <ul>
                             <li>host request IP address from DHCP server</li>
                         </ul>
                     </li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="centerText">Local Loopback address</h3>
+                <blockquote>
+                    A address useful for
+                    <span class="emphRed">testing</span>.
+                </blockquote>
+                <ul>
+                    <caption>Properties</caption>
+                    <li>let the system 
+                        <span class="emphRed">send message to itself</span>
+                        <span class="emphBlue"> to test connection</span>.</li>
+                    <li>always in <span class="emphBlue">127 range address</span>
+                        in IPv4.</li>
+                    <li>It is <span class="emphBlue">::1</span> in IPv6</li>
+                    <li>Example..
+                        <ul>
+                            <li>It checks TCP/IP stack is correctly installed on the machine!</li>
+                            <li>You can acutally ping loop back address from your device.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>  
+                <h3 class="leftText">ETC</h3>
+                <ul>
+                    <li>Routers and swtiches also have its own loop back address but not the same as local one.</li>
                 </ul>
             </section>
         </article>
