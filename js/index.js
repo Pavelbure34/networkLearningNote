@@ -242,7 +242,14 @@ const nav = {
         );
     },
     day16:()=>{
-        $("#mainArticle").html(contents.day16);   
+        $("#mainArticle").html(contents.day16); 
+        funcs.imageWithSub(
+            "img1",
+            "center",
+            "./img/day16/directedbrAddr.png",
+            700,300,
+            "Direct Broadcast Address"
+        );
     },
     day17:()=>{
         $("#mainArticle").html(contents.day17);   
