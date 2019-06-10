@@ -817,9 +817,157 @@ const contents={
             </ul>\
         </section>',
     day16:
-        '',
+        '<h2 class="leftText">day16.special IPv4 addresses</h2>\
+        <section>\
+            <h3 class="centerText">Directed Broadcast address</h3>\
+            <blockquote>\
+                A address that host\
+                <span class="emphRed">sends</span> data to\
+                  <span class="emphBlue">all the network on a specific network</span>.\
+            </blockquote>\
+            <div id="img1"></div>\
+            <ul>\
+                <caption>Properties</caption>\
+                <li><span class="emphRed">The host portion</span>\
+                     is <span class="emphBlue">binary 1</span>.</li>\
+                <li>Example..\
+                    <div>\
+                        If <span class="emphBlue">172.16.0.0</span>,\
+                        broadcast address is\
+                         <span class="emphBlue">172.16.255.255</span>.\
+                    </div>\
+                </li>\
+                <li>It is\
+                     <span class="emphBlue">disabled</span>\
+                     <span class="emphRed">by default</span>.\
+                     <div>\
+                         They can be used for hacking attack!\
+                     </div>\
+                </li>\
+            </ul>\
+        </section>\
+        <section>\
+            <h3 class="centerText">Local Broadcast address</h3>\
+            <blockquote>\
+                A address that host\
+                <span class="emphRed">communicate with</span>\
+                    <span class="emphBlue">all the devices on a local network</span>.\
+            </blockquote>\
+            <ul>\
+                <caption>Properties</caption>\
+                <li><span class="emphRed">addres</span>\
+                        is all <span class="emphBlue">binary 1s</span>.</li>\
+                <li>Example..\
+                    <div>\
+                        <span class="emphBlue">255.255.255.255</span>.\
+                    </div>\
+                </li>\
+                <li>It is <span class="emphBlue">always dropped and can be overridden</span>\
+                     by <span class="emphRed">routers and layer3 switches<br>\
+                    with DHCP forwarding or relay</span>.\
+                </li>\
+                <li>When it is used\
+                    <ul>\
+                        <li>host request IP address from DHCP server</li>\
+                    </ul>\
+                </li>\
+            </ul>\
+        </section>\
+        <section>\
+            <h3 class="centerText">Local Loopback address</h3>\
+            <blockquote>\
+                A address useful for\
+                <span class="emphRed">testing</span>.\
+            </blockquote>\
+            <ul>\
+                <caption>Properties</caption>\
+                <li>let the system \
+                    <span class="emphRed">send message to itself</span>\
+                    <span class="emphBlue"> to test connection</span>.</li>\
+                <li>always in <span class="emphBlue">127 range address</span>\
+                    in IPv4.</li>\
+                <li>It is <span class="emphBlue">::1</span> in IPv6</li>\
+                <li>Example..\
+                    <ul>\
+                        <li>It checks TCP/IP stack is correctly installed on the machine!</li>\
+                        <li>You can acutally ping loop back address from your device.</li>\
+                    </ul>\
+                </li>\
+            </ul>\
+        </section>\
+        <section>\
+            <h3 class="centerText">Private addresses</h3>\
+            <h4 class="leftText">RFC</h4>\
+            <blockquote>\
+                <span class="emphRed">RFC</span> stands for \
+                <span class="emphBlue">R</span>equest\
+                <span class="emphBlue">F</span>or\
+                <span class="emphBlue">C</span>omments.\
+            </blockquote>\
+            <ul>\
+                <caption>Properties</caption>\
+                <li>standard for internet</li>\
+                <li><span class="emphRed">RFC1918</span>\
+                    is <span class="emphBlue">a private IP address</span>\
+                     that <span class="emphBlue">isn&rsquo;t accessible</span>\
+                    and <span class="emphBlue">blocked</span> by internet hosting services.\
+                </li>\
+                <ul>\
+                    <li>Class A\
+                        <div class="indented">\
+                            IP adress whose <span class="emphRed">first octect</span>\
+                             is <span class="emphBlue">10</span>.<br>\
+                             ex)\
+                             MY PC address would be 10.0.0.1. So it is not routable from outside.\
+                             But can ping to Facebook.com because of NAT. \
+                        </div>\
+                    </li>\
+                    <li>Class B\
+                        <div class="indented">\
+                            IP adress whose <span class="emphRed">first and second octects</span>\
+                             are <span class="emphBlue">172.16</span>.\
+                        </div>\
+                    </li>\
+                    <li>Class C\
+                        <div class="indented">\
+                            IP adress whose <span class="emphRed">first and second octects</span>\
+                             are <span class="emphBlue">192.168</span>.\
+                        </div>\
+                    </li>\
+                    <li>These IP addresses are not be routed.</li>\
+                </ul>\
+            </ul>\
+        </section>\
+        <section>\
+            <h3 class="centerText">IPv4 Link Local Address</h3>\
+            <blockquote>\
+                It is <span class="emphRed">Dynamic Configuration of IPv4 Link Local Address</span>.\
+            </blockquote>\
+            <ul>\
+                <caption>Properties</caption>\
+                <li>used for <span class="emphBlue">PC configuration</span> for DHCP\
+                    <span class="emphBlue">when no server is available</span></li>\
+                <li>Automatically allocated within <span class="emphBlue">the range of 169.254.0.0/16</span></li>\
+                <li>This allows <span class="emphBlue">Linked local IP address communcation</span>\
+                     on <span class="emphRed">local segments</span>.\
+                    <div class="indented">\
+                        Allows communication between the two devices when DHCP is not provided\
+                        without any configuration set.\
+                    </div>\
+                </li>\
+                <li>It is <span class="emphRed">not routable from outside</span>.</li>\
+            </ul>\
+        </section>\
+        <section>  \
+            <h3 class="leftText">ETC</h3>\
+            <ul>\
+                <li>Routers and swtiches also have its own loop back address but not the same as local one.</li>\
+            </ul>\
+        </section>',
     day17:
         '',
     day18:
         '',
+    day19:
+        ''
 }
