@@ -259,6 +259,9 @@ const nav = {
     },
     day19:()=>{
         $("#mainArticle").html(contents.day19);   
+    },
+    day20:()=>{
+        $("#mainArticle").html(contents.day20);   
     }
 }
 

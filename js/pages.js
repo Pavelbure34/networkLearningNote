@@ -965,9 +965,88 @@ const contents={
             </ul>\
         </section>',
     day17:
-        '',
+        '<h2 class="leftText">day17.Subnet Masking</h2>\
+        <section>\
+            <blockquote>\
+                It determines\
+                 <emphR t=red>which part is network or host portion</emphR>.\
+            </blockquote>\
+            <ul>\
+                <caption>Properties</caption>\
+                <li>It has to start with binary 1s from left and has to be contiguous in both 1s and 0s.</li>\
+                <li>It helps PC check whether it is\
+                    <emphR t=red>remote or local device</emphR>\
+                    <ul>\
+                        <captio>If...</captio>\
+                        <li>remote(different subnet)\
+                             -> reachable <emphB t=blue>via default gateway</emphB></li>\
+                        <li>local(same subnet)\
+                             -> reachable <emphB t=blue>without default gateway</emphB></li>\
+                        <div id="img1"></div>\
+                        <li><emphR t=red>Check</emphR>\
+                             <emphB t=blue>the network portion</emphB> in the IP address of device.</li>\
+                        <li>If the same, they are local and vice versa</li>\
+                    </ul>\
+                </li>\
+                <ul>\
+                    <caption>Example</caption>\
+                    <li>Here are three devices in the network.<br>\
+                        10.1.2.3<emphR t=red>/16</emphR>\
+                         10.2.3.25<emphR t=red>/16</emphR>\
+                          11.10.5.6<emphR t=red>/124</emphR>\
+                        <div class="indented">\
+                            /16 indiates they are in the same subnet.\
+                        </div>\
+                    </li>\
+                </ul>\
+                <ul>\
+                    <caption>Network Mask</caption>\
+                    <li><emphB t=red>1 in binary</emphB> represents <emphR t=red>network portion</emphR>\
+                         and <emphB t=red>0</emphB> represents <emphR t=red>host portion</emphR>\
+                         in IP address without subnet.\
+                    </li>\
+                    <ul>Examples\
+                        <li>\
+                            10.1.2.0/255.255.0.0 10.1.1.1/255.255.0.0 \
+                            <div class="indented">\
+                                because of subnet as 255.255.0.0, 10.1 is the network portion.<br>\
+                                They are the same so local.\
+                            </div>\
+                        </li>\
+                        <li>\
+                            10.1.2.0/255.255.255.0 10.1.1.1/255.255.255.0 \
+                            <div class="indented">\
+                                because of subnet as 255.255.255.0, 10.1.1 and 10.1.2 are the network portion.<br>\
+                                and they are different.so remote.\
+                            </div>\
+                        </li>\
+                    </ul>\
+                </ul>\
+                <ul>\
+                    <caption>Discontiguous Network Mask</caption>\
+                    <ul>\
+                        <caption>Properties</caption>\
+                        <li>CISCO <emphR t=red>does not</emphR> support this.</li>\
+                        <li>Example.\
+                            <div class="indented">\
+                                For subnet mask,\
+                                11110000.11010000.00001100.00100000\
+                            </div>\
+                        </li>\
+                        <li>CISCO <emphR t=red>only</emphR> supports\
+                            <emphB t=red>contiguous subnet mask</emphB>.\
+                            <div class="indented">\
+                                For subnet mask,11111111.1110000.000000.0000000\
+                            </div>\
+                        </li>\
+                    </ul>\
+                </ul>\
+            </ul>\
+        </section>',
     day18:
         '',
     day19:
+        '',
+    day20:
         ''
 }
