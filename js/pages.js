@@ -1044,7 +1044,39 @@ const contents={
             </ul>\
         </section>',
     day18:
-        '',
+        '<h2 class="leftText">CIDR</h2>\
+        <section>\
+            <blockquote>\
+                <emphR t="">CIDR</emphR> is\
+                <emphB t="">C</emphB>lassless\
+                <emphB t="">I</emphB>nter\
+                <emphB t="">D</emphB>omin\
+                <emphB t="">R</emphB>outing.'+ 
+            '</blockquote>\
+        </section>\
+        <ul>\
+            <caption>Properties</caption>\
+            <div id="img1"></div>\
+            <li>Introduced in 1993 and replaced classful IP address system.</li>\
+            <li>Allows <emphB t="">Variable Length Subnet Mask(VLSM)</emphB></li>\
+            <li>Provides beter notations:<emphB t="">counting number of binary 1s in subnet masking</emphB>.\
+                <div class="indented">\
+                    For Class A,\
+                    10.2.1.0/<emphR t="">255.0.0.0</emphR> -> 10.2.1.0/<emphR t="">8</emphR><br>\
+                    For Class B,\
+                    180.20.4.1/<emphR t="">255.255.0.0</emphR> -> 180.20.4.1/<emphR t="">16</emphR><br>\
+                    For Class C,\
+                    280.20.4.1/<emphR t="">255.255.255.0</emphR> -> 280.20.4.1/<emphR t="">24</emphR>\
+                </div>\
+            </li>\
+            <li><emphR t="">Subnet mask has to be contiguous</emphR>.</li>\
+        </ul>\
+        <h3 class="centerText">Why CIDR?</h3>\
+        <ul>\
+            <caption>Industries moved over to CIDR notation for reasons...</caption>\
+            <li>When classful system,company has to host all their domains in one class.</li>\
+            <li>With CIDR, company was able to vary the subnet masking.</li>\
+        </ul>',
     day19:
         '',
     day20:

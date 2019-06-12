@@ -256,6 +256,13 @@ const nav = {
     },
     day18:()=>{
         $("#mainArticle").html(contents.day18);   
+        funcs.imageWithSub(
+            "img1",
+            "center",
+            "./img/day18/cidrNotation.png",
+            700,300,
+            "CIDR notation"
+        );
     },
     day19:()=>{
         $("#mainArticle").html(contents.day19);   
