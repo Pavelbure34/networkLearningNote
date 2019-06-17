@@ -1078,7 +1078,33 @@ const contents={
             <li>With CIDR, company was able to vary the subnet masking.</li>\
         </ul>',
     day19:
-        '',
+        '<h2 class="leftText">day19.CISCO IOS Software</h2>\
+        <section>\
+            <blockquote>\
+                A OS system developed by CISCO to help manage network better.\
+            </blockquote>\
+            <ul>\
+                <caption>Properties</caption>\
+                <li>installed on many routers and switches from CISCO.</li>\
+                <li>size varies depending on the machine.</li>\
+            </ul>\
+        </section>\
+        <section>\
+            <h3 class="centerText">Physical Connection and to Console</h3>\
+            <ol>\
+                <li>Turn on the device and wait for it to boot.</li>\
+                <li>connect to CISCO Router or Switch using softwares listed below\
+                    or actual physical cables.\
+                </li>\
+            </ol>\
+        </section>\
+        <section>\
+            <h4 class="leftText">Useful Softwares for connecting to CISCO Routing or Switch</h4>\
+            <ul>\
+                <li>Putty: only available for Windows</li>\
+                <li>HyperTerminal</li>\
+            </ul>\
+        </section>',
     day20:
         '',
     day21:
