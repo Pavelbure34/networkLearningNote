@@ -1106,7 +1106,73 @@ const contents={
             </ul>\
         </section>',
     day20:
-        '',
+        '<h2 class="leftText">day20.CLI Modes</h2>\
+        <section>\
+            <h3 class="centerText">1.User Mode(>)</h3>\
+            <blockquote>\
+                Signified by <emphR t="t">></emphR> symbol on terminal.'+ 
+            '</blockquote>\
+            <div id="img1"></div>\
+            <ul>\
+                <caption>Properties</caption>\
+                <li>Only gives <emphB t="t">limited range</emphB> of\
+                    <emphR t="t">monitoring functions</emphR>.</li>\
+                <li><emphR t="t">No authentication</emphR> requied to access to this mode.</li>\
+            </ul>\
+        </section>\
+        <section>\
+            <h3 class="centerText">2.Privilege Mode(#)</h3>\
+            <blockquote>\
+                Signified by <emphR t="t">#</emphR> symbol on terminal.'+
+            '</blockquote>\
+            <div id="img2"></div>\
+            <ul>\
+                <caption>Properties</caption>\
+                <li>Only gives <emphB t="t">wider range</emphB> of\
+                    <emphR t="t">monitoring functions</emphR>\
+                    than user mode such as debugging.\
+                </li>\
+                <li>Triggered by <emphR t="t">&ldquo;enable&rdquo;</emphR> command.</li>\
+                <li><emphR t="t">Required</emphR> to configure the device.</li>\
+                <li><emphR t="t">authentication  requied </emphR>to access to this mode.</li>\
+            </ul>\
+        </section>\
+        <section>\
+            <h3 class="centerText">3.Global Configuration Mode(#)</h3>\
+            <blockquote>\
+                Signified by <emphR t="t">#</emphR> symbol on terminal.'+
+            '</blockquote>\
+            <div id="img3"></div>\
+            <ul>\
+                <caption>Properties</caption>\
+                <li>Triggered by <emphR t="t">&ldquo;conf t&rdquo;</emphR> command.</li>\
+                <li>Allow to change global setting.</li>\
+            </ul>\
+        </section>\
+        <section>\
+            <h3 class="centerText">4.Interface mode()</h3>\
+            <blockquote>\
+                Signified by <emphR t="t"></emphR> symbol on terminal.'+
+            '</blockquote>\
+            <div id="img3"></div>\
+            <ul>\
+                <caption>Properties</caption>\
+                <li>Triggered by <emphR t="t">&ldquo;int f&rdquo;</emphR> command.</li>\
+                <li>Allow to change interface settings.\
+                    <ul>\
+                        <caption>For example</caption>\
+                        <li>IP addresses of Ethernet ...</li>\
+                        <li>On/off of interface</li>\
+                    </ul>\
+                </li>\
+            </ul>\
+        </section>\
+        <ul>\
+            <caption>Tips</caption>\
+            <li>From any mode,type exit to go back to previous mode.</li>\
+            <li>Use tab key for auto completion like Linux system.</li>\
+            <li>Always use shortened keywords for command.</li>\
+        </ul>',
     day21:
         '',
     day22:
