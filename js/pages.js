@@ -1177,4 +1177,6 @@ const contents={
         '',
     day22:
         '',
+    day23:
+        ''
 }
