@@ -1,6 +1,13 @@
 $(document).ready(
     ()=>{
         //App.nav.orientation()
+        funcs.imageWithSub(
+            "subnetexception",
+            "center",
+            "./img/day21/subnetmaskException.png",
+            500,300,
+            "subnet Mask Variation"
+        )
     }
 );
 
@@ -271,13 +278,48 @@ const nav = {
         $("#mainArticle").html(contents.day20);   
     },
     day21:()=>{
-        $("#mainArticle").html(contents.day21);   
+        $("#mainArticle").html(contents.day21);  
+        funcs.imageWithSub(
+            "img1","center",
+            "./img/day21/binary.png",
+            800,500,
+            "Binary Method"
+        ); 
+        funcs.imageWithSub(
+            "img2",
+            "center",
+            "./img/day21/subnetmask_20.png",
+            500,300,
+            "subnet Mask Variation"
+        )
+        $("#confirm").onClick(()=>{
+            let subnet = $("#subnet").val;
+            let fHost = $("#fHost").val;
+            let lHost = $("#lHost").val;
+            let broadcast = $("#broadcast").val;
+            if (
+                subnet === "192.168.0.0" &&
+                fHost === "192.169.0.1" &&
+                lHost === "192.169.255.254" &&
+                broadcast === "192.169.255.255"
+            ){
+                alert("Correct!");
+            }else{
+                alert("Do it again!");
+            }
+        })
+        $("#clr").onClick(()=>{
+            $("#subnet").val("");
+            $("#fHost").val("");
+            $("#lHost").val("");
+            $("#broadcast").val("");
+        })
     },
     day22:()=>{
         $("#mainArticle").html(contents.day22);   
     },
     day23:()=>{
-        $("#mainArticle").html(contents.day22);   
+        $("#mainArticle").html(contents.day23);   
     }
 }
 
