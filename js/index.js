@@ -292,23 +292,23 @@ const nav = {
             500,300,
             "subnet Mask Variation"
         )
-        $("#confirm").onClick(()=>{
-            let subnet = $("#subnet").val;
-            let fHost = $("#fHost").val;
-            let lHost = $("#lHost").val;
-            let broadcast = $("#broadcast").val;
+        $("#confirm").click(()=>{
+            let subnet = $("#subnet").val().toString();
+            let fHost = $("#fHost").val().toString();
+            let lHost = $("#lHost").val().toString();
+            let broadcast = $("#broadcast").val().toString();
             if (
                 subnet === "192.168.0.0" &&
-                fHost === "192.169.0.1" &&
-                lHost === "192.169.255.254" &&
-                broadcast === "192.169.255.255"
+                fHost === "192.168.0.1" &&
+                lHost === "192.168.255.254" &&
+                broadcast === "192.168.255.255"
             ){
                 alert("Correct!");
             }else{
                 alert("Do it again!");
             }
         })
-        $("#clr").onClick(()=>{
+        $("#clr").click(()=>{
             $("#subnet").val("");
             $("#fHost").val("");
             $("#lHost").val("");

@@ -1174,7 +1174,56 @@ const contents={
             <li>Always use shortened keywords for command.</li>\
         </ul>',
     day21:
-        '',
+        '<h2 class="leftText">day21.IP subnetting</h2>\
+        <section>\
+            <h3 class="centerText">1. Binary Method</h3>\
+            <div id="img1"></div>\
+            <blockquote>\
+                <ol>\
+                    <h4>Rules</h4>\
+                    <li>Network/Subnet Address\
+                        <div class="indented">\
+                            -fill the host portion of network with binary 0s\
+                        </div>\
+                    </li>\
+                    <li>Broadcast Address\
+                        <div class="indented">\
+                            -fill the host portion of network with binary 1s\
+                        </div>\
+                    </li>\
+                    <li>First Host\
+                        <div class="indented">\
+                            -fill the host portion of network with binary 0s\
+                            except the last bit set to binar 1s\
+                        </div>\
+                    </li>\
+                    <li>Last Host\
+                        <div class="indented">\
+                            -fill the host portion of network with binary 1s\
+                            except the last bit set to binar 0s\
+                        </div>\
+                    </li>\
+                </ol>\
+            </blockquote>'+
+            '<section>\
+                <h4>Quiz</h4>\
+                PC1. 192.168.10.25/16. it is okay to skip the subnet mask for the answer.\
+                <button id="confirm">Check</button>\
+                <button id="clr">CLR</button>\
+                <ol>\
+                    <li>subnet: <input type="text" id="subnet"></li>\
+                    <li>First Host: <input type="text" id="fHost"></li>\
+                    <li>Last Host: <input type="text" id="lHost"></li>\
+                    <li>BoradCast: <input type="text" id="broadcast"></li>\
+                </ol>\
+            </section>\
+            <section>\
+                <h4>Variation</h4>\
+                Subnet mask does not always be 8,16,24.<br>\
+                For example,172.16.123.5<emphR>/20</emphR>\
+                <div id="img2"></div>\
+            </section>\
+        </section>',
     day22:
         '',
     day23:
