@@ -314,6 +314,28 @@ const nav = {
             $("#lHost").val("");
             $("#broadcast").val("");
         })
+        $("#confirm1").click(()=>{
+            let subnet = $("#subnet1").val().toString();
+            let fHost = $("#fHost1").val().toString();
+            let lHost = $("#lHost1").val().toString();
+            let broadcast = $("#broadcast1").val().toString();
+            if (
+                subnet === "196.0.0.0" &&
+                fHost === "196.0.0.1" &&
+                lHost === "196.255.255.254" &&
+                broadcast === "196.255.255.255"
+            ){
+                alert("Correct!");
+            }else{
+                alert("Do it again!");
+            }
+        })
+        $("#clr1").click(()=>{
+            $("#subnet1").val("");
+            $("#fHost1").val("");
+            $("#lHost1").val("");
+            $("#broadcast1").val("");
+        })
     },
     day22:()=>{
         $("#mainArticle").html(contents.day22);   

@@ -1223,6 +1223,100 @@ const contents={
                 For example,172.16.123.5<emphR>/20</emphR>\
                 <div id="img2"></div>\
             </section>\
+        </section>\
+        <section>\
+            <h3 class="centerText">2. Quick Method</h3>\
+            This method relies on shortcut table.\
+            <table class="centerItem">\
+                <tr>\
+                    <th colspan="9">\
+                        A + B = 256. A is important\
+                    </th>\
+                </tr>\
+                <tr>\
+                    <th>A</th>\
+                    <td>\
+                        128\
+                    </td>\
+                    <td>\
+                        64\
+                    </td>\
+                    <td>\
+                        32\
+                    </td>\
+                    <td>\
+                        16\
+                    </td>\
+                    <td>\
+                        8\
+                    </td>\
+                    <td>\
+                        4\
+                    </td>\
+                    <td>\
+                        2\
+                    </td>\
+                    <td>\
+                        1\
+                    </td>\
+                </tr>\
+                <tr>'+
+                    '<th>B</th>\
+                    <td>\
+                        128\
+                    </td>\
+                    <td>\
+                        192\
+                    </td>\
+                    <td>\
+                        224\
+                    </td>\
+                    <td>\
+                        240\
+                    </td>\
+                    <td>\
+                        248\
+                    </td>\
+                    <td>\
+                        252\
+                    </td>\
+                    <td>\
+                        254\
+                    </td>\
+                    <td>\
+                        255\
+                    </td>\
+                </tr>\
+            </table>\
+            <blockquote>\
+                <ol>\
+                    <caption>How?</caption>\
+                    <li>Find where subnet octet is not 255.</li>\
+                    <li>Take note of that octet.</li>\
+                    <li>Subtract the mask value that is not 255 from 256</li>\
+                    <li>Work out where that value is in the range of network.\
+                        <ul>\
+                            <caption>If 35,</caption>\
+                            <li>it is between 32 and 48</li>\
+                            <li>subnet/host octet lies in the third octet from the left</li>\
+                            <li>Octet before that target is network portion and vice versa.</li>\
+                            <li>And the rest of it is.. what you think!</li>\
+                        </ul>\
+                    </li>\
+                </ol>'+
+            '</blockquote>\
+            <section>\
+                <h4>Quiz</h4>\
+                PC2. 196.178.40.25/23 it is okay to skip the subnet mask for the answer.\
+                <button id="confirm1">Check</button>\
+                <button id="clr1">CLR</button>\
+                <ol>\
+                    <li>subnet: <input type="text" id="subnet1"></li>\
+                    <li>First Host: <input type="text" id="fHost1"></li>\
+                    <li>Last Host: <input type="text" id="lHost1"></li>\
+                    <li>BoradCast: <input type="text" id="broadcast1"></li>\
+                </ol>\
+            </section>\
         </section>',
     day22:
         '',
