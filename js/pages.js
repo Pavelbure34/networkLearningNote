@@ -1294,6 +1294,7 @@ const contents={
                     <li>Find where subnet octet is not 255.</li>\
                     <li>Take note of that octet.</li>\
                     <li>Subtract the mask value that is not 255 from 256</li>\
+                    <li>the result is the increment of the network.</li>\
                     <li>Work out where that value is in the range of network.\
                         <ul>\
                             <caption>If 35,</caption>\
@@ -1303,11 +1304,12 @@ const contents={
                             <li>And the rest of it is.. what you think!</li>\
                         </ul>\
                     </li>\
+                    <li>Leave the network portion intact.\
                 </ol>'+
             '</blockquote>\
             <section>\
                 <h4>Quiz</h4>\
-                PC2. 196.178.40.25/23 it is okay to skip the subnet mask for the answer.\
+                PC2. 196.178.20.100/20 it is okay to skip the subnet mask for the answer.\
                 <button id="confirm1">Check</button>\
                 <button id="clr1">CLR</button>\
                 <ol>\
@@ -1321,5 +1323,7 @@ const contents={
     day22:
         '',
     day23:
+        '',
+    day24:
         ''
 }

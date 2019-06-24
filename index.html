@@ -41,8 +41,9 @@
                         <li><a href="javascript:nav.day19()">day19.CISCO IOS Software</a></li>
                         <li><a href="javascript:nav.day20()">day20.CLI Modes</a></li>
                         <li><a href="javascript:nav.day21()">day21.IP subnetting</a></li>
-                        <li><a href="javascript:nav.day22()">day22.</a></li>
+                        <li><a href="javascript:nav.day22()">day22.IP subdividing network with given number of hosts</a></li>
                         <li><a href="javascript:nav.day23()">day23.</a></li>
+                        <li><a href="javascript:nav.day24()">day24.</a></li>
                     </ul>
                 </div>
                 <div class="clearB"></div>
@@ -50,7 +51,8 @@
         </div>
 
         <article id="mainArticle">
-            
+            <h2 class="leftText">day22.subdividing network with given number of hosts</h2>
+
         </article>
         
         <aside>
@@ -223,6 +225,15 @@
             </ul>
             <ul class="circleBulletPt">
                 <h3 class="centerText">Tips</h3>
+                <li>
+                    <ul>
+                        <caption>Using binary odometer(0~255)</caption>
+                        <li>Subnet: Keep host portion with binary 0s.</li>
+                        <li>Broadcast Address: next address - 1</li>
+                        <li>First Host Address: Subnet + 1</li>
+                        <li>Last Host Address: Broadcast Address + 1</li>
+                    </ul>
+                </li>
                 <li>
                     You can
                     <span class="emphBlue">track down paths and time</span>
