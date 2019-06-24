@@ -41,7 +41,7 @@
                         <li><a href="javascript:nav.day19()">day19.CISCO IOS Software</a></li>
                         <li><a href="javascript:nav.day20()">day20.CLI Modes</a></li>
                         <li><a href="javascript:nav.day21()">day21.IP subnetting</a></li>
-                        <li><a href="javascript:nav.day22()">day22.IP subdividing network with given number of hosts</a></li>
+                        <li><a href="javascript:nav.day22()">day22.IP subdividing network</a></li>
                         <li><a href="javascript:nav.day23()">day23.</a></li>
                         <li><a href="javascript:nav.day24()">day24.</a></li>
                     </ul>
@@ -51,8 +51,23 @@
         </div>
 
         <article id="mainArticle">
-            <h2 class="leftText">day22.subdividing network with given number of hosts</h2>
+            <h2 class="leftText">day22.subdividing network</h2>
+            <section>
+                <ol>
+                    <caption>When you are given with</caption>
+                    <li>given number of hosts
 
+                    </li>
+                    <li>given number of subnets
+
+                    </li>
+                </ol>
+            </section>
+            <ul>
+                <li>It is optimal to have 2<sup>n</sup>-1 number of hosts,
+                where n is the number of binary 1s in host portion.</li>
+                <li>Maximum you can have 254 hosts per subnet.</li>
+            </ul>
         </article>
         
         <aside>
@@ -234,6 +249,9 @@
                         <li>Last Host Address: Broadcast Address + 1</li>
                     </ul>
                 </li>
+                <li>Per subnet, you can only have max 254 hosts due to traffic and broadcast.</li>
+                <li>It is optimal to have 2<sup>n</sup>-1 number of hosts,
+                    where n is the number of binary 1s in host portion.</li>
                 <li>
                     You can
                     <span class="emphBlue">track down paths and time</span>
